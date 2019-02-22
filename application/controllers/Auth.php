@@ -65,8 +65,8 @@ class Auth extends CI_Controller {
                     'protocol' => 'smtp',  
                     'smtp_host' => 'ssl://smtp.googlemail.com',  
                     'smtp_port' => 465,  
-                    'smtp_user' => 'kirimcek@gmail.com',   //email google
-                    'smtp_pass' => 'johansantri21',   //passsword google
+                    'smtp_user' => 'xxxxx',   //email google
+                    'smtp_pass' => 'xxxxxxxxx',   //passsword google
                     'mailtype' => 'html',  
                     'charset' => 'iso-8859-1'  
                     );  
@@ -236,8 +236,8 @@ class Auth extends CI_Controller {
                     'protocol' => 'smtp',  
                     'smtp_host' => 'ssl://smtp.googlemail.com',  
                     'smtp_port' => 465,  
-                    'smtp_user' => 'kirimcek@gmail.com',   //email google
-                    'smtp_pass' => 'johansantri21',   //pasword google
+                    'smtp_user' => 'xxxxxxx',   //email google
+                    'smtp_pass' => 'xxxxxxxxxxx',   //pasword google
                     'mailtype' => 'html',  
                     'charset' => 'iso-8859-1'  
                     );  
@@ -245,7 +245,7 @@ class Auth extends CI_Controller {
                     $this->email->set_newline("\r\n");  
                     $this->email->from(($this->input->post('email',TRUE)), ($this->input->post('nama_depan',TRUE)));  
                     $this->email->to($this->input->post('email',TRUE));  
-                    $this->email->cc('kirimcek@gmail.com');   //sesuaikan
+                    $this->email->cc('xxxxxxxxxx');   //sesuaikan
                     $this->email->subject('reset your password');  
                     $this->email->message('to continue resetting click this link   .'.$message);  
                     if (!$this->email->send()) {  
